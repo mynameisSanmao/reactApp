@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 import Child from './child'
+import './index.less'
+import './scss.scss'
 export default class Life extends React.Component {
   constructor(props) {
     super(props)
@@ -16,7 +18,7 @@ export default class Life extends React.Component {
   render() {
     return (
       <Fragment>
-        <input value={this.state.count} />
+        <input value={this.state.count} className="p-10 m-10" />
         <button onClick={this.handleClick}>增加</button>
         <Child name={this.state.count}></Child>
       </Fragment>

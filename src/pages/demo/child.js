@@ -6,18 +6,7 @@ export default class Child extends Component {
       names: ''
     }
   }
-  componentWillReceiveProps(data) {
-    console.log(data, 'data')
-    this.setState({
-      names: data.name
-    })
-  }
-  componentDidMount() {
-    console.log(this)
-    this.setState({
-      names: this.props.name
-    })
-  }
+
   render() {
     return (
       <div>
