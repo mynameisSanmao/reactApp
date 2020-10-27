@@ -1,12 +1,20 @@
+/*
+ * @Author: Sanmao
+ * @Date: 2020-10-25 17:26:20
+ * @LastEditors: Sanmao
+ * @LastEditTime: 2020-10-27 11:10:47
+ * @Descripttion: 
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Admin from './admin'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   // <React.StrictMode>
-  <App />,
+  <Admin />,
   // </React.StrictMode>,
   document.getElementById('root')
 );
