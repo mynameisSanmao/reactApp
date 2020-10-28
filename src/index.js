@@ -2,7 +2,7 @@
  * @Author: Sanmao
  * @Date: 2020-10-25 17:26:20
  * @LastEditors: Sanmao
- * @LastEditTime: 2020-10-27 11:10:47
+ * @LastEditTime: 2020-10-28 16:07:54
  * @Descripttion: 
  */
 import React from 'react';
@@ -13,9 +13,7 @@ import Admin from './admin'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  // <React.StrictMode>
   <Admin />,
-  // </React.StrictMode>,
   document.getElementById('root')
 );
 
