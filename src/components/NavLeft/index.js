@@ -2,12 +2,12 @@
  * @Author: Sanmao
  * @Date: 2020-10-26 17:16:01
  * @LastEditors: Sanmao
- * @LastEditTime: 2020-10-28 19:10:02
+ * @LastEditTime: 2020-10-28 19:37:32
  * @Descripttion: 
  */
 import React from 'react'
 import { Menu } from 'antd';
-import logoImg from "../../assets/img/logo.png"
+import logoImg from "../../assets/img/logo.png" // 图片引入方式
 import menuList from "../../config/menuConfig"
 import './index.less'
 const { SubMenu } = Menu;
@@ -25,11 +25,14 @@ export default class MenuLeft extends React.Component {
             menuData
         })
     }
+    /**
+     * @description 设置菜单
+     * @param {Array} data 
+     */
     setMenuData = (data) => {
         return data.map(item => {
             if (item.children) {
-
-                return <SubMenu key={item.key} title={item.title}>{this.setMenuData(item.children)}</SubMenu>
+                return (<SubMenu key={item.key} title={item.title}>{this.setMenuData(item.children)}</SubMenu>)
             } else {
                 return <Menu.Item key={item.key}>{item.title}</Menu.Item>
             }
